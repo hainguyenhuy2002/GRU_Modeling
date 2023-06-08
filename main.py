@@ -16,7 +16,7 @@ parser.add_argument('--k_eval', default=16, type=int) #value of K durig Recall a
 # parse the optimizer arguments
 parser.add_argument('--optimizer_type', default='Adagrad', type=str) #Optimizer --> Adagrad is the best according to literature
 parser.add_argument('--final_act', default='tanh', type=str) #Final Activation Function
-parser.add_argument('--lr', default=0.01, type=float) #learning rate (Best according to literature 0.01 to 0.05)
+parser.add_argument('--lr', default=0.1, type=float) #learning rate (Best according to literature 0.01 to 0.05)
 parser.add_argument('--weight_decay', default=0, type=float) #no weight decay
 parser.add_argument('--momentum', default=0, type=float) #no momentum
 parser.add_argument('--eps', default=1e-6, type=float) #not used
