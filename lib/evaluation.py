@@ -33,6 +33,10 @@ class Evaluation(object):
                 mrrs.append(mrr)
         mean_losses = np.mean(losses)
         mean_recall = np.mean(recalls)
-        mean_mrr = np.mean(mrrs)
+
+        mrrs_cpu = [mrr.cpu().numpy() for mrr in mrrs]
+
+
+        mean_mrr = np.mean(mrrs_cpu)
 
         return mean_losses, mean_recall, mean_mrr
