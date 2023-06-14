@@ -38,7 +38,7 @@ def get_mrr(indices, targets): #Mean Receiprocal Rank --> Average of rank of nex
     return mrr
 
 
-def evaluate(indices, targets, k=16):
+def evaluate(indices, targets, k=20):
     """
     Evaluates the model using Recall@K, MRR@K scores.
 
